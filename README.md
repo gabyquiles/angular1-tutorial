@@ -1,3 +1,6 @@
+# This is the result of me following the Angular 1 tutorial. For the original code and information please refer to
+https://docs.angularjs.org/tutorial
+
 # AngularJS Phone Catalog Tutorial Application
 
 
