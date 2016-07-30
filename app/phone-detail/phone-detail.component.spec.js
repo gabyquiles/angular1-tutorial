@@ -1,3 +1,5 @@
+'use strict';
+
 describe('phoneDetail', function() {
 
     // Load the module that contains the `phoneDetail` component before each test
@@ -21,7 +23,9 @@ describe('phoneDetail', function() {
         }));
 
         it('should fetch the phone details', function() {
-            expect(ctrl.phone).toBeUndefined();
+            jasmine.addCustomEqualityTester(angular.equals);
+
+            expect(ctrl.phone).toEqual({});
 
             $httpBackend.flush();
             expect(ctrl.phone).toEqual(xyzPhoneData);
